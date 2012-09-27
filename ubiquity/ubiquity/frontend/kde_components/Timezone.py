@@ -15,6 +15,7 @@ class City:
 
 class TimezoneMap(QtGui.QWidget):
 
+    QtCore.QTextCodec.setCodecForCStrings(QtCore.QTextCodec.CodecForName("utf8"))
     zoneChanged = QtCore.pyqtSignal(object, object)
 
     def __init__(self, parent):
